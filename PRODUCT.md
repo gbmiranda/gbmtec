@@ -10,7 +10,7 @@ web
 
 ## Stack
 
-Estático: HTML, CSS e JS puro, sem build. Hospedagem decidida pelo Gabriel: UpUai Cloud, projeto `diversos` (nginx em contêiner, deploy por git push na `main` do repo `gbmiranda/gbmtec`). Hospedagem anterior: GitHub Pages. Domínio: `gbmtec.com.br` (Registro.br).
+Estático: HTML, CSS e JS puro, sem build. Hospedagem decidida pelo Gabriel: UpUai Cloud, projeto `diversos` (nginx em contêiner, deploy por git push na `main` do repo `gbmiranda/gbmtec`). Domínio: `gbmtec.com.br` (Registro.br).
 
 ## Users
 
