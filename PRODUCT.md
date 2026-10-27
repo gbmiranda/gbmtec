@@ -47,6 +47,7 @@ Trabalha com Claude, Codex e copilotos avançados no dia a dia (dito no próprio
 - Português do Brasil. Sem travessão (—) como pontuação nos textos (regra dos projetos do Gabriel).
 - Voz (pedido do Gabriel, 27/10/2026: "textos meio egocêntricos", "menos IA"): o produto e o visitante são o sujeito; a posse das marcas aparece uma vez, sem repetir "minhas"; primeira pessoa só onde é ele quem faz. Sem bordão nem frase de efeito, sem "não é X, é Y", sem listas de três por hábito.
 - Nome: GBM Tecnologia (razão social GBM Tecnologia LTDA). Dados da empresa e JSON-LD Organization do site atual permanecem (servem a verificações de Google, Meta e gateways).
+- Razão social na Receita: em 27/10/2026 o CNPJ 68.727.144/0001-88 ainda constava como GMB TECNOLOGIA LTDA (M antes do B). O Gabriel decidiu padronizar "GBM Tecnologia" com link para gbmtec.com.br em todos os sites, porque o contrato social vai mudar em definitivo para GBM. Termos e políticas de Petalia e Gabaritei seguem com a razão da Receita até a mudança.
 - O arquivo `google261a20c75eca65b7.html` fica na raiz.
 
 ## Evidence on Hand
