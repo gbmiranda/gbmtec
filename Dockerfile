@@ -9,8 +9,9 @@ RUN mkdir -p /app/tmp && chown -R 1000:1000 /app
 
 COPY nginx.conf.template /app/nginx.conf.template
 
-COPY index.html 404.html robots.txt sitemap.xml favicon.svg apple-touch-icon.png /usr/share/nginx/html/
-COPY google261a20c75eca65b7.html /usr/share/nginx/html/
+COPY index.html 404.html robots.txt sitemap.xml favicon.svg favicon.ico apple-touch-icon.png /usr/share/nginx/html/
+# Verificação do Search Console e chave do IndexNow (Bing e outros buscadores)
+COPY google261a20c75eca65b7.html 353724910307aa22abaaae415801b265.txt /usr/share/nginx/html/
 COPY assets /usr/share/nginx/html/assets
 
 # CSS e JS ficam 1h no cache do navegador e o HTML não: cada build carimba os links
