@@ -25,7 +25,7 @@
       { "name": "ease", "value": "cubic-bezier(.16,1,.3,1)", "purpose": "Single expo-out easing for every transition and the monogram stroke." },
       { "name": "cell-fill", "value": "background-color .25s, color .25s", "purpose": "Solid black fill and color flip on active cells." },
       { "name": "rule-draw", "value": "transform scaleX 1.3s", "purpose": "Section rule draws left to right once on reveal." },
-      { "name": "monogram-trace", "value": "stroke-dashoffset 2.8s, delays 0.4s and 0.8s", "purpose": "Hero monogram is drawn once." },
+      { "name": "monogram-trace", "value": "skeleton stroke-dashoffset 2.4s, delays 0.4s and 0.8s; fill opacity 1.2s at 1.8s", "purpose": "Hero monogram is drawn once, then inked." },
       { "name": "window-zoom", "value": "transform scale(1.05) 1.1s", "purpose": "Screenshot nudge inside its fixed mat on hover." }
     ],
     "breakpoints": [
@@ -107,7 +107,7 @@
       "Josefin Sans light uppercase, letterspaced, for headings and labels; Hanken Grotesk for reading.",
       "Active state is always a solid black fill with a color flip, never a glow or a lift.",
       "Depth by rules: 1px black gap lattices and double-ruled cartouches, no shadows.",
-      "Hairline monogram drawn once, with a ruler-line stroke animation."
+      "Didone monogram drawn once: a pen line traces the skeleton, then the filled mark fades in over it."
     ],
     "rules": [
       { "name": "The Product-Only Color Rule", "body": "Saturated color appears only inside real product screenshots. Never add an accent hue, gradient or tinted fill to the chrome.", "section": "colors" },

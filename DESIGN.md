@@ -113,7 +113,7 @@ The build rejects the dark neon developer portfolio and the white SaaS template 
 - Josefin Sans light uppercase, letterspaced, for headings and labels; Hanken Grotesk for reading.
 - Active state is always a solid black fill with a color flip, never a glow or a lift.
 - Depth by rules: 1px black gap lattices and double-ruled cartouches, no shadows.
-- Hairline monogram drawn once, with a ruler-line stroke animation.
+- Didone monogram drawn once: a 13-unit pen line traces the skeleton (G, M, B), then the ink of the mark fills over it.
 
 ## Colors
 
@@ -126,7 +126,7 @@ A restrained achromatic palette: warm gallery off-white, one lacquer black, and 
 - **Gallery White** (#f5f5f2): page ground, and the text color on filled cells.
 - **Paper White** (#ffffff): inset surfaces that sit one step above the wall (service cells, cartouche, channel cells, footer stamp, screenshot mat).
 - **Slate Gray** (#545a62): secondary text, labels, dd/notes, idle metadata.
-- **Hammered Silver** (#a4a9b0): the outline of double-ruled cartouches, the pierced-square row, the hero monogram line, scrollbar.
+- **Hammered Silver** (#a4a9b0): the outline of double-ruled cartouches, the pierced-square row, scrollbar.
 - **Hairline Gray** (#d3d5d8): quiet row dividers inside lists (product rows, timeline, stamp rows).
 - **Night Lacquer** (#0e0f11), **Night Paper** (#17181b), **Night Ink** (#f2f2ee), **Night Slate** (#a8adb5), **Night Silver** (#5e636b), **Night Hairline** (#2a2c30): the dark-scheme counterparts, swapped through `prefers-color-scheme: dark` on the same custom property names.
 
@@ -172,7 +172,7 @@ Square only: `border-radius: 0` on every cell, and 1px lacquer borders. Recurrin
 - **Double-ruled cartouche:** a 1px black border plus a 1px silver outline offset by 6px (with a 6px outer margin to leave room), used on services, the featured figure and the contact channels.
 - **Pierced square:** a hollow 8 to 11px square outline, as list markers, a status glyph (filled square = live, hollow = pre-launch), and a masked row of hollow squares (24 x 22px tile, silver) used as divider only at the two turns of the page.
 - **Window mat:** a screenshot sits in a 1px black frame inside a 14px mat in the wall color, 4:3, cropped left.
-- **Monogram:** a hairline line-drawn GBM mark, stroked once with a dash animation (2.8s, staggered).
+- **Monogram:** the GBM Didone mark (one filled path, 512 viewBox, Fibonacci weights 34/21/13 on a ring of radius 233; source in `marca/oficial/gbm.svg`), always solid in the ink color. In the hero the skeleton is traced once (2.4s, staggered 0.4s) and the filled mark fades in at 1.8s.
 
 ## Components
 
@@ -180,7 +180,7 @@ Square only: `border-radius: 0` on every cell, and 1px lacquer borders. Recurrin
 Square, 52px high, 0 26px padding, 1px lacquer border, Josefin label (0.8rem, 500, 0.18em, uppercase). Idle is transparent; hover fills Lacquer Black with Gallery White text (250ms, expo-out). The solid variant starts filled and inverts on hover. Icons are 14px square-capped line SVGs. Focus is a 2px lacquer outline at 3px offset.
 
 ### Navigation
-Sticky top bar on the wall color with a 1px lacquer bottom rule. A 96px monogram cell on the left (ruled both sides), link cells separated by 1px right rules, and a solid black "Contar projeto" cell on the right. Links hover to solid black. Below 860px: the Menu cell toggles a stacked list.
+Sticky top bar on the wall color with a 1px lacquer bottom rule. A 96px monogram cell on the left (40px mark) (ruled both sides), link cells separated by 1px right rules, and a solid black "Contar projeto" cell on the right. Links hover to solid black. Below 860px: the Menu cell toggles a stacked list.
 
 ### Project windows
 A lattice of square peepholes onto live products: screenshot in a ruled frame on a mat, with a caption cell (name in Josefin 600, descriptor in Slate Gray, arrow icon) under a 1px rule. Hover or focus fills the caption black and nudges the screenshot scale to 1.05 (1.1s).

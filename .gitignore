@@ -3,7 +3,7 @@
 .impeccable/mocks/
 .impeccable/build/
 .claude/
-# rascunhos de marca (inclui a rubrica do Gabriel): ficam só nesta máquina, o repo é público
+# rascunhos de marca (inclui a rubrica do Gabriel): ficam só nesta máquina, o repo é público; só o logo final entra
 marca/*/
-!marca/anteriores/
+!marca/oficial/
 .upuai/
