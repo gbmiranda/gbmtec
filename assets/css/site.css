@@ -67,11 +67,14 @@ ul,ol{padding:0;list-style:none}
 .topo{position:sticky;top:0;z-index:20;background:var(--fundo);border-bottom:1px solid var(--tinta)}
 .topo__grade{max-width:calc(var(--max) + var(--gut)*2);margin:0 auto;padding:0 var(--gut);display:flex;align-items:stretch;height:var(--topo)}
 .topo .cel{min-height:0;height:100%}
-.cel--marca{width:96px;padding:0;border-width:0 1px;border-style:solid}
-.topo__nav{display:flex;flex:1;align-items:stretch}
-.topo__nav a{display:flex;align-items:center;padding:0 24px;font:500 .8rem/1 var(--f-titulo);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;border-right:1px solid var(--tinta);transition:background-color .25s var(--ease),color .25s var(--ease)}
-.topo__nav a:hover{background:var(--tinta);color:var(--fundo)}
-.topo__menu{display:none;margin-left:auto;border-width:0 1px}
+/* Topo livre: a marca solta à esquerda, os links em texto à direita, só o filete de baixo */
+.cel--marca{padding:0;border:0;justify-content:flex-start}
+.cel--marca:hover{background:transparent;color:var(--tinta)}
+.topo__nav{display:flex;align-items:stretch;gap:clamp(24px,3vw,44px);margin-left:auto}
+.topo__nav a{display:flex;align-items:center;font:500 .8rem/1 var(--f-titulo);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;text-underline-offset:.6em}
+.topo__nav a:hover{text-decoration:underline;text-decoration-thickness:1px}
+.topo__menu{display:none;margin-left:auto;padding:0;border:0;text-underline-offset:.6em}
+.topo__menu:hover{background:transparent;color:var(--tinta);text-decoration:underline;text-decoration-thickness:1px}
 
 /* Hero: o monograma é desenhado uma vez ao lado do título */
 .hero{position:relative;overflow:hidden;padding:clamp(28px,4.5vh,56px) 0 clamp(28px,4vh,48px)}
@@ -251,11 +254,12 @@ h2{font:300 clamp(1.8rem,3.6vw,2.9rem)/1.08 var(--f-titulo);letter-spacing:.06em
 
 /* Telas estreitas */
 @media (max-width:860px){
-  .topo__nav{position:absolute;left:0;right:0;top:var(--topo);flex-direction:column;background:var(--fundo);border-bottom:1px solid var(--tinta);display:none}
+  .topo__nav{position:absolute;left:0;right:0;top:var(--topo);flex-direction:column;gap:0;margin:0;background:var(--fundo);border-bottom:1px solid var(--tinta);display:none}
   .topo__nav.aberto{display:flex}
-  .topo__nav a{padding:20px var(--gut);border-right:0;border-top:1px solid var(--filete);min-height:56px}
+  .topo__nav a{padding:20px var(--gut);border-top:1px solid var(--filete);min-height:56px}
+  .topo__nav a:hover{background:var(--tinta);color:var(--fundo);text-decoration:none}
+  .topo__nav a:first-child{border-top-color:var(--tinta)}
   .topo__menu{display:inline-flex}
-  .cel--marca{width:72px}
 }
 
 /* Currículo em PDF: só a trajetória */

@@ -12,11 +12,13 @@
     var fechar = function () {
       menu.classList.remove('aberto');
       botaoMenu.setAttribute('aria-expanded', 'false');
+      botaoMenu.textContent = 'Menu';
     };
     botaoMenu.addEventListener('click', function () {
       var abrir = !menu.classList.contains('aberto');
       menu.classList.toggle('aberto', abrir);
       botaoMenu.setAttribute('aria-expanded', abrir ? 'true' : 'false');
+      botaoMenu.textContent = abrir ? 'Fechar' : 'Menu';
     });
     $$('a', menu).forEach(function (a) { a.addEventListener('click', fechar); });
     doc.addEventListener('keydown', function (e) { if (e.key === 'Escape') fechar(); });

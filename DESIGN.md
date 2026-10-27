@@ -180,7 +180,7 @@ Square only: `border-radius: 0` on every cell, and 1px lacquer borders. Recurrin
 Square, 52px high, 0 26px padding, 1px lacquer border, Josefin label (0.8rem, 500, 0.18em, uppercase). Idle is transparent; hover fills Lacquer Black with Gallery White text (250ms, expo-out). The solid variant starts filled and inverts on hover. Icons are 14px square-capped line SVGs. Focus is a 2px lacquer outline at 3px offset.
 
 ### Navigation
-Sticky top bar on the wall color with a 1px lacquer bottom rule. A 96px monogram cell on the left (40px mark) (ruled both sides), link cells separated by 1px right rules, and a solid black "Contar projeto" cell on the right. Links hover to solid black. Below 860px: the Menu cell toggles a stacked list.
+Sticky top bar on the wall color with a 1px lacquer bottom rule. The 40px mark sits free on the left, with no rules around it; the links are plain letterspaced text on the right and underline on hover. No sales button in the header. Below 860px a plain "Menu" text button (it reads "Fechar" when open) toggles a stacked list of ruled rows.
 
 ### Project windows
 A lattice of square peepholes onto live products: screenshot in a ruled frame on a mat, with a caption cell (name in Josefin 600, descriptor in Slate Gray, arrow icon) under a 1px rule. Hover or focus fills the caption black and nudges the screenshot scale to 1.05 (1.1s).
