@@ -158,12 +158,12 @@ h2{font:300 clamp(1.8rem,3.6vw,2.9rem)/1.08 var(--f-titulo);letter-spacing:.06em
    Altura pela proporção (área parecida), para nenhuma pesar mais que a outra. */
 .logo{display:block;height:var(--h);aspect-ratio:var(--r);max-width:100%;background:currentColor;-webkit-mask:var(--m) left center/contain no-repeat;mask:var(--m) left center/contain no-repeat;forced-color-adjust:none}
 @media (forced-colors:active){.logo{background:CanvasText}}
-.logo--gabaritei{--m:url(../logo/marcas/gabaritei.svg);--r:5.828;--h:24px}
-.logo--upuai{--m:url(../logo/marcas/upuai.svg);--r:4.355;--h:28px}
-.logo--petalia{--m:url(../logo/marcas/petalia.svg);--r:2.737;--h:35px}
-.logo--estilia{--m:url(../logo/marcas/estilia.svg);--r:3.304;--h:32px}
-.logo--saiph{--m:url(../logo/marcas/saiph.svg);--r:4.233;--h:28px}
-.logo--tai{--m:url(../logo/marcas/tai.svg);--r:2.405;--h:37px}
+.logo--gabaritei{--m:url(/assets/logo/marcas/gabaritei.svg);--r:5.828;--h:24px}
+.logo--upuai{--m:url(/assets/logo/marcas/upuai.svg);--r:4.355;--h:28px}
+.logo--petalia{--m:url(/assets/logo/marcas/petalia.svg);--r:2.737;--h:35px}
+.logo--estilia{--m:url(/assets/logo/marcas/estilia.svg);--r:3.304;--h:32px}
+.logo--saiph{--m:url(/assets/logo/marcas/saiph.svg);--r:4.233;--h:28px}
+.logo--tai{--m:url(/assets/logo/marcas/tai.svg);--r:2.405;--h:37px}
 .linha__estado{display:inline-flex;align-items:center;gap:10px;font:600 .78rem/1 var(--f-titulo);letter-spacing:.18em;text-transform:uppercase}
 .linha__estado::before{content:"";width:9px;height:9px;background:var(--tinta);flex:none}
 .linha__estado--pre::before{background:transparent;border:1.5px solid var(--tinta)}
