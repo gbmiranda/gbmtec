@@ -6,5 +6,6 @@ exclude:
   - nginx.conf.template
   - .dockerignore
   - marca
+  - "assets/img/*.json"
 include:
   - .well-known

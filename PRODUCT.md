@@ -24,7 +24,7 @@ Site da **GBM Tecnologia LTDA** (CNPJ 68.727.144/0001-88, Belo Horizonte, MG) e 
 
 ## Positioning
 
-Um engenheiro com mais de 10 anos de estrada que opera vários produtos próprios em produção (Gabaritei, Petalia, Estilia, UpUai) e usa desenvolvimento orientado a IA como método diário. Quem contrata leva a velocidade de um time pequeno com a responsabilidade de quem já opera o que constrói. Um estúdio genérico não pode copiar os produtos no ar.
+Um engenheiro com mais de 10 anos de estrada que opera vários projetos próprios em produção (Gabaritei, Petalia, Estilia, UpUai, a Saiph TI e a TAI, onde é sócio) e usa desenvolvimento orientado a IA como método diário. Quem contrata leva a velocidade de um time pequeno com a responsabilidade de quem já opera o que constrói. Um estúdio genérico não pode copiar os produtos no ar.
 
 ## Operating Context
 
@@ -37,9 +37,10 @@ Trabalha com Claude, Codex e copilotos avançados no dia a dia (dito no próprio
 - IA: integração com vários provedores de LLM (Gemini, DeepSeek, Anthropic), conversa por SSE, voz.
 - Infra: Go, Kubernetes (K3s), Helm, ArgoCD (UpUai Cloud).
 - Pagamentos e e-mail em produto: Asaas (cartão e Pix), AbacatePay, Resend.
-- Sem preços publicados. Sem depoimentos de clientes. Sem número de telefone ou WhatsApp confirmado. Único e-mail confirmado: contato@gabaritei.com.br.
+- Sem preços publicados. Sem depoimentos de clientes.
+- Contato decidido pelo Gabriel (27/10/2026): WhatsApp corporativo +55 31 98427-5220 (o mesmo do site da UpUai), sem formulário; e-mail gabriel@gbmtec.com.br (caixa ainda a criar).
 - Mingtian (chinês com IA) e Passos de Jesus (maquetes 3D) ainda não estão no ar: só podem aparecer como "em construção".
-- Fora da vitrine: outros projetos do workspace do Gabriel cuja autoria ou publicidade não foi confirmada para este site.
+- Incluídos por pedido do Gabriel: Saiph TI (saiphti.com.br, empresa dele) e TAI (taitecnologia.com, onde é sócio). Fora da vitrine: demais projetos do workspace cuja autoria ou publicidade não foi confirmada para este site.
 
 ## Brand Commitments
 
@@ -49,7 +50,7 @@ Trabalha com Claude, Codex e copilotos avançados no dia a dia (dito no próprio
 
 ## Evidence on Hand
 
-- Produtos no ar (HTTP 200 em 27/10/2026): gabaritei.com.br, petalia.com.br (fase pré-venda), estilia.com.br, upuai.com.br.
+- Projetos no ar (HTTP 200 em 27/10/2026): gabaritei.com.br, petalia.com.br (fase pré-venda), estilia.com.br, upuai.com.br, saiphti.com.br, taitecnologia.com. Prints das home em `assets/img/*.webp`, capturados em 27/10/2026 (origem: a URL de cada um).
 - Carreira (LinkedIn): PDITec 2012, Framework 2013 a 2015, PayMeApp 2015, Tecvidya 2016, Framework 2017 a 2021, Loft 2021, Sólides 2022 a 2024, Framework Digital 2024 até hoje. Bacharelado em Sistemas de Informação, PUC Minas, 2011 a 2015.
 - Único número com fonte: o app de vendas da Araujo, feito em Flutter sob a liderança dele, fatura mais de R$ 20 milhões por mês (texto do próprio LinkedIn).
 - Clientes citados no LinkedIn: Unimed-BH, Sólides, Tangerino, Unidas, Araujo, Loft.
