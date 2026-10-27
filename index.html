@@ -3,64 +3,376 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GBM Tecnologia LTDA</title>
-<meta name="description" content="GBM Tecnologia LTDA: empresa brasileira de tecnologia que desenvolve e opera produtos digitais, de estudo para concursos a infraestrutura em nuvem.">
+<title>GBM Tecnologia · Software sob medida, freela e consultoria</title>
+<meta name="description" content="Gabriel Braga, engenheiro full stack com mais de 10 anos de estrada. Software sob medida, freela e consultoria em mobile, web e IA, por quem já mantém quatro produtos no ar: Gabaritei, UpUai, Petalia e Estilia.">
 <meta name="color-scheme" content="light dark">
-<link rel="canonical" href="https://gbmiranda.github.io/gbmtec/">
-<style>
-:root{
-  --fundo:#f7f8fa; --cartao:#ffffff; --texto:#14181f; --suave:#566070; --linha:#e2e6ec; --destaque:#1f4fd8;
-}
-@media (prefers-color-scheme: dark){
-  :root{ --fundo:#0e1116; --cartao:#171b22; --texto:#eceff4; --suave:#a3adbb; --linha:#2a303a; --destaque:#7fa2ff; }
-}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--fundo);color:var(--texto);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-.pagina{max-width:720px;margin:0 auto;padding:48px 16px 64px}
-h1{font-size:clamp(28px,6vw,40px);line-height:1.15;margin:0 0 12px;letter-spacing:-.02em}
-h2{font-size:18px;margin:40px 0 12px}
-p{margin:0 0 12px}
-.lead{font-size:18px;color:var(--suave);margin-bottom:8px}
-a{color:var(--destaque)}
-.cartao{background:var(--cartao);border:1px solid var(--linha);border-radius:12px;padding:16px 18px}
-.produtos{display:grid;gap:12px;padding:0;margin:0;list-style:none}
-.produtos strong{display:block}
-.produtos span{color:var(--suave)}
-dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}
-dt{color:var(--suave)}
-dd{margin:0}
-footer{margin-top:48px;color:var(--suave);font-size:14px}
-@media (max-width:480px){dl{grid-template-columns:1fr}dt{margin-top:8px}}
-</style>
+<meta name="theme-color" content="#f5f5f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e0f11" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://gbmtec.com.br/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="GBM Tecnologia">
+<meta property="og:title" content="GBM Tecnologia · Software que vai pro ar">
+<meta property="og:description" content="Software sob medida, freela e consultoria com Gabriel Braga. Quatro produtos próprios no ar: Gabaritei, UpUai, Petalia e Estilia.">
+<meta property="og:url" content="https://gbmtec.com.br/">
+<meta property="og:image" content="https://gbmtec.com.br/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Monograma GBM e a frase: software que vai pro ar.">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300..700&family=Josefin+Sans:wght@200..700&display=swap">
+<link rel="stylesheet" href="assets/css/site.css">
+
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","legalName":"GBM Tecnologia LTDA","name":"GBM Tecnologia","taxID":"68.727.144/0001-88","url":"https://gbmiranda.github.io/gbmtec/","email":"contato@gabaritei.com.br","address":{"@type":"PostalAddress","addressLocality":"Belo Horizonte","addressRegion":"MG","addressCountry":"BR"}}
+{"@context":"https://schema.org","@graph":[
+{"@type":"Organization","@id":"https://gbmtec.com.br/#empresa","legalName":"GBM Tecnologia LTDA","name":"GBM Tecnologia","taxID":"68.727.144/0001-88","url":"https://gbmtec.com.br/","email":"contato@gabaritei.com.br","founder":{"@id":"https://gbmtec.com.br/#gabriel"},"address":{"@type":"PostalAddress","addressLocality":"Belo Horizonte","addressRegion":"MG","addressCountry":"BR"},"makesOffer":[
+{"@type":"Offer","itemOffered":{"@type":"Service","name":"Software sob medida","description":"Aplicativos mobile, sistemas web, back-end, integrações e IA, da ideia à publicação."}},
+{"@type":"Offer","itemOffered":{"@type":"Service","name":"Freela de desenvolvimento","description":"Engenharia sênior por período ou por entrega, dentro do repositório e do fluxo do cliente."}},
+{"@type":"Offer","itemOffered":{"@type":"Service","name":"Consultoria técnica","description":"Arquitetura, revisão de código, migração para Flutter e adoção de IA no desenvolvimento."}}]},
+{"@type":"Person","@id":"https://gbmtec.com.br/#gabriel","name":"Gabriel Braga","jobTitle":"Engenheiro de software full stack","url":"https://gbmtec.com.br/","address":{"@type":"PostalAddress","addressLocality":"Belo Horizonte","addressRegion":"MG","addressCountry":"BR"},"alumniOf":{"@type":"CollegeOrUniversity","name":"PUC Minas"},"sameAs":["https://www.linkedin.com/in/gbmiranda","https://github.com/gbmiranda"]},
+{"@type":"WebSite","@id":"https://gbmtec.com.br/#site","url":"https://gbmtec.com.br/","name":"GBM Tecnologia","inLanguage":"pt-BR","publisher":{"@id":"https://gbmtec.com.br/#empresa"}}]}
 </script>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-<main class="pagina">
-  <h1>GBM Tecnologia LTDA</h1>
-  <p class="lead">Empresa brasileira de tecnologia. Desenvolvemos e operamos produtos digitais de software, de estudo para concursos a infraestrutura em nuvem.</p>
 
-  <h2>Produtos</h2>
-  <ul class="produtos">
-    <li class="cartao"><strong><a href="https://gabaritei.com.br">Gabaritei</a></strong><span>Plataforma de estudos para concursos públicos, com inteligência artificial.</span></li>
-    <li class="cartao"><strong><a href="https://upuai.com.br">UpUai Cloud</a></strong><span>Plataforma brasileira para publicar aplicações, bancos de dados e domínios com um <code>git push</code>.</span></li>
-    <li class="cartao"><strong><a href="https://petalia.com.br">Petalia</a></strong><span>Perfumes importados em pequenas quantidades, para experimentar antes de comprar o frasco.</span></li>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="gbm" viewBox="-4 -4 212.96 108">
+    <path d="M89.4 19.22A50 50 0 1 0 98.4 62.56L56 62.56"/>
+    <path d="M98.4 28L98.4 100M98.4 28H115.68A17.28 17.28 0 0 1 115.68 62.56H98.4M98.4 62.56H114.24A18.72 18.72 0 0 1 114.24 100H98.4"/>
+    <path d="M143.04 100L143.04 28L174 82.72L204.96 28L204.96 100"/>
+  </symbol>
+  <symbol id="seta" viewBox="0 0 16 16"><path d="M4 12L12 4M5.5 4H12V10.5"/></symbol>
+  <symbol id="baixo" viewBox="0 0 16 16"><path d="M8 2.5V13M3.5 8.5L8 13L12.5 8.5"/></symbol>
+</svg>
+
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo" id="topo">
+  <div class="topo__grade">
+    <a class="cel cel--marca" href="#topo" aria-label="GBM Tecnologia, voltar ao início">
+      <svg class="marca" aria-hidden="true"><use href="#gbm"/></svg>
+    </a>
+    <nav class="topo__nav" id="menu" aria-label="Principal">
+      <a href="#no-ar">No ar</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#metodo">Método</a>
+      <a href="#trajetoria">Trajetória</a>
+    </nav>
+    <button class="cel topo__menu" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+    <a class="cel cel--cheia topo__cta" href="#contato">Contar projeto</a>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <section class="hero" aria-labelledby="titulo">
+    <svg class="hero__marca" viewBox="-4 -4 212.96 108" aria-hidden="true" focusable="false">
+      <path pathLength="1" d="M89.4 19.22A50 50 0 1 0 98.4 62.56L56 62.56"/>
+      <path pathLength="1" d="M98.4 28L98.4 100M98.4 28H115.68A17.28 17.28 0 0 1 115.68 62.56H98.4M98.4 62.56H114.24A18.72 18.72 0 0 1 114.24 100H98.4"/>
+      <path pathLength="1" d="M143.04 100L143.04 28L174 82.72L204.96 28L204.96 100"/>
+    </svg>
+    <div class="hero__texto">
+      <h1 id="titulo">Software que vai pro ar.</h1>
+      <p class="hero__lead">Sou o Gabriel Braga, engenheiro full stack com mais de dez anos de estrada. Construo apps, sistemas e produtos de ponta a ponta, com IA no processo, e coloco em produção. Os quatro logo abaixo estão no ar hoje e são da GBM.</p>
+      <div class="hero__acoes">
+        <a class="cel cel--cheia" href="#contato">Contar meu projeto</a>
+        <a class="cel" href="#no-ar">Ver o que está no ar<svg class="ico" aria-hidden="true"><use href="#baixo"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <ul class="janelas" aria-label="Produtos no ar">
+    <li>
+      <a class="janela" href="https://gabaritei.com.br" target="_blank" rel="noopener">
+        <span class="janela__vidro"><img src="assets/img/gabaritei.webp" width="1000" height="784" alt="Página inicial do Gabaritei: sua aprovação começa com a questão certa, com uma questão de concurso respondida na tela." loading="eager" decoding="async"></span>
+        <span class="janela__legenda"><b>Gabaritei</b><span>Concursos com IA</span><svg class="ico" aria-hidden="true"><use href="#seta"/></svg></span>
+      </a>
+    </li>
+    <li>
+      <a class="janela" href="https://upuai.com.br" target="_blank" rel="noopener">
+        <span class="janela__vidro"><img src="assets/img/upuai.webp" width="1000" height="784" alt="Página inicial da UpUai Cloud: hospedagem com gente do outro lado, com mapa do Brasil e datacenter em Belo Horizonte." loading="eager" decoding="async"></span>
+        <span class="janela__legenda"><b>UpUai Cloud</b><span>Deploy com git push</span><svg class="ico" aria-hidden="true"><use href="#seta"/></svg></span>
+      </a>
+    </li>
+    <li>
+      <a class="janela" href="https://petalia.com.br" target="_blank" rel="noopener">
+        <span class="janela__vidro"><img src="assets/img/petalia.webp" width="1000" height="784" alt="Página inicial da Petalia: por que ter um perfume se dá pra ter dez, com quatro frascos de perfumes importados." loading="lazy" decoding="async"></span>
+        <span class="janela__legenda"><b>Petalia</b><span>Decants de perfumes</span><svg class="ico" aria-hidden="true"><use href="#seta"/></svg></span>
+      </a>
+    </li>
+    <li>
+      <a class="janela" href="https://estilia.com.br" target="_blank" rel="noopener">
+        <span class="janela__vidro"><img src="assets/img/estilia.webp" width="1000" height="784" alt="Página inicial da Estilia: suas cores, seus cortes, suas próximas escolhas, com uma paleta de exemplo na tela." loading="lazy" decoding="async"></span>
+        <span class="janela__legenda"><b>Estilia</b><span>Consultoria de imagem com IA</span><svg class="ico" aria-hidden="true"><use href="#seta"/></svg></span>
+      </a>
+    </li>
   </ul>
 
-  <h2>Dados da empresa</h2>
-  <div class="cartao">
-    <dl>
-      <dt>Razão social</dt><dd>GBM Tecnologia LTDA</dd>
-      <dt>CNPJ</dt><dd>68.727.144/0001-88</dd>
-      <dt>Atividade</dt><dd>Consultoria e desenvolvimento em tecnologia da informação</dd>
-      <dt>Cidade</dt><dd>Belo Horizonte, Minas Gerais, Brasil</dd>
-      <dt>Contato</dt><dd><a href="mailto:contato@gabaritei.com.br">contato@gabaritei.com.br</a></dd>
-    </dl>
-  </div>
+  <section class="bloco" id="no-ar" aria-labelledby="t-no-ar">
+    <div class="bloco__cabeca">
+      <h2 id="t-no-ar">No ar, de verdade.</h2>
+      <p class="bloco__lead">Quatro produtos em operação, construídos e mantidos por mim na GBM. É por eles que eu falo de software em produção: cobrança, login, e-mail, IA e deploy, tudo isso já passou por aqui.</p>
+    </div>
+    <ol class="quadro">
+      <li class="linha">
+        <h3 class="linha__nome"><a href="https://gabaritei.com.br" target="_blank" rel="noopener">Gabaritei</a></h3>
+        <p class="linha__texto">Plataforma de estudos para concursos públicos com inteligência artificial: banco de questões, simulados, plano de estudo e catálogo de concursos analisados por IA. Assinatura Pro com cartão e Pix dentro do próprio produto.</p>
+        <p class="linha__pecas">React 19, Astro, Fastify, Prisma, PostgreSQL</p>
+        <p class="linha__estado">No ar</p>
+      </li>
+      <li class="linha">
+        <h3 class="linha__nome"><a href="https://upuai.com.br" target="_blank" rel="noopener">UpUai Cloud</a></h3>
+        <p class="linha__texto">Plataforma brasileira para publicar aplicações, bancos de dados e domínios com um git push, com datacenter em Belo Horizonte. É onde rodam os produtos da GBM e este site.</p>
+        <p class="linha__pecas">Go, Kubernetes, Helm, ArgoCD, React</p>
+        <p class="linha__estado">No ar</p>
+      </li>
+      <li class="linha">
+        <h3 class="linha__nome"><a href="https://petalia.com.br" target="_blank" rel="noopener">Petalia</a></h3>
+        <p class="linha__texto">Loja de decants de perfumes importados, de 1 a 15 ml, com quiz olfativo, mais de novecentas fichas de perfume e clube por assinatura. Hoje em pré-venda.</p>
+        <p class="linha__pecas">Astro, React 19, Fastify, Prisma, PostgreSQL</p>
+        <p class="linha__estado linha__estado--pre">Pré-venda</p>
+      </li>
+      <li class="linha">
+        <h3 class="linha__nome"><a href="https://estilia.com.br" target="_blank" rel="noopener">Estilia</a></h3>
+        <p class="linha__texto">Consultoria de imagem com IA: cores, cortes e looks a partir do rosto e da rotina da pessoa, num guia pessoal consultado pelo celular.</p>
+        <p class="linha__pecas">Astro, React, Fastify, Prisma, PostgreSQL</p>
+        <p class="linha__estado">No ar</p>
+      </li>
+    </ol>
+    <div class="bloco__rodape">
+      <p class="pequeno">Em construção</p>
+      <ul class="lista-fina">
+        <li><b>Mingtian</b> Chinês simplificado conversando com uma companheira de IA, do nível 0 ao 4 do HSK 3.0.</li>
+        <li><b>Passos de Jesus</b> Maquetes 3D vivas dos lugares por onde Jesus passou, num app guiado.</li>
+      </ul>
+    </div>
+  </section>
 
-  <footer>© 2026 GBM Tecnologia LTDA. Todos os direitos reservados.</footer>
+  <div class="furos" aria-hidden="true"></div>
+
+  <section class="bloco" id="servicos" aria-labelledby="t-servicos">
+    <div class="bloco__cabeca">
+      <h2 id="t-servicos">O que eu faço por você.</h2>
+      <p class="bloco__lead">Três jeitos de trabalhar comigo. Escolha o que se parece mais com o seu momento, e a gente acerta o resto na conversa.</p>
+    </div>
+
+    <div class="abas" role="tablist" aria-label="Tipos de trabalho">
+      <button class="aba" role="tab" type="button" id="aba-sob-medida" aria-controls="painel-sob-medida" aria-selected="true" data-tipo="Software sob medida">Software sob medida</button>
+      <button class="aba" role="tab" type="button" id="aba-freela" aria-controls="painel-freela" aria-selected="false" tabindex="-1" data-tipo="Freela">Freela</button>
+      <button class="aba" role="tab" type="button" id="aba-consultoria" aria-controls="painel-consultoria" aria-selected="false" tabindex="-1" data-tipo="Consultoria">Consultoria</button>
+    </div>
+
+    <div class="paineis">
+      <article class="painel" role="tabpanel" id="painel-sob-medida" aria-labelledby="aba-sob-medida">
+        <h3>Da ideia ao ar.</h3>
+        <p class="painel__lead">Você descreve o problema. Eu desenho e construo a solução inteira, do app ao servidor, já publicada e funcionando: mobile, web, back-end, integrações e IA.</p>
+        <div class="painel__colunas">
+          <div>
+            <h4>O que você leva</h4>
+            <ul>
+              <li>App em Flutter ou iOS nativo, sistema web em React ou Astro, API e banco de dados.</li>
+              <li>Login, pagamento por cartão e Pix, e-mail transacional e painel administrativo.</li>
+              <li>Publicação na nuvem e acompanhamento depois do lançamento.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Quando faz sentido</h4>
+            <ul>
+              <li>A planilha ou o sistema antigo já não dá conta do processo.</li>
+              <li>Você quer validar um produto rápido, sem montar um time.</li>
+            </ul>
+          </div>
+        </div>
+        <a class="cel cel--cheia" href="#contato" data-pedir="Software sob medida">Pedir software sob medida</a>
+      </article>
+
+      <article class="painel" role="tabpanel" id="painel-freela" aria-labelledby="aba-freela">
+        <h3>Um sênior dentro do seu time.</h3>
+        <p class="painel__lead">Entro no seu repositório e no seu fluxo, por período ou por entrega, para destravar o que está parado: uma feature, um app, uma migração.</p>
+        <div class="painel__colunas">
+          <div>
+            <h4>O que você leva</h4>
+            <ul>
+              <li>Código revisável, com testes e documentação do que foi feito.</li>
+              <li>Mobile (Flutter, Swift), web (TypeScript, React) e back-end (Node, Java, Go).</li>
+              <li>Conversa direta comigo, sem camada de agência no meio.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Quando faz sentido</h4>
+            <ul>
+              <li>O time é pequeno e o backlog é grande.</li>
+              <li>Falta alguém com estrada em mobile ou em arquitetura.</li>
+            </ul>
+          </div>
+        </div>
+        <a class="cel cel--cheia" href="#contato" data-pedir="Freela">Pedir um freela</a>
+      </article>
+
+      <article class="painel" role="tabpanel" id="painel-consultoria" aria-labelledby="aba-consultoria">
+        <h3>Decidir certo antes de gastar.</h3>
+        <p class="painel__lead">Arquitetura, revisão de código e plano técnico para quem vai construir, migrar ou escalar um produto, e adoção de IA no jeito de desenvolver do seu time.</p>
+        <div class="painel__colunas">
+          <div>
+            <h4>O que você leva</h4>
+            <ul>
+              <li>Desenho de arquitetura e roteiro de migração, inclusive para Flutter.</li>
+              <li>Padrões de código, bibliotecas reutilizáveis e design system de componentes.</li>
+              <li>Fluxo de desenvolvimento com IA (Claude, Codex e copilotos), com revisão e testes.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Quando faz sentido</h4>
+            <ul>
+              <li>Antes de contratar um time ou uma fornecedora.</li>
+              <li>Quando o app cresceu e ficou difícil de mexer.</li>
+            </ul>
+          </div>
+        </div>
+        <a class="cel cel--cheia" href="#contato" data-pedir="Consultoria">Pedir consultoria</a>
+      </article>
+    </div>
+  </section>
+
+  <div class="furos" aria-hidden="true"></div>
+
+  <section class="bloco" id="metodo" aria-labelledby="t-metodo">
+    <div class="bloco__cabeca">
+      <h2 id="t-metodo">Como eu trabalho.</h2>
+      <p class="bloco__lead">Experiência de mais de dez anos com IA como amplificador, não como atalho. Eu uso Claude, Codex e copilotos para explorar ideias, validar soluções, refatorar, escrever testes e documentar. A decisão continua sendo de engenheiro.</p>
+    </div>
+    <ol class="passos">
+      <li><span class="passo__n" aria-hidden="true">1</span><h3>Entender o problema a fundo</h3><p>Antes de escrever código, conversar até o problema real aparecer. Muita coisa some ou encolhe nessa etapa.</p></li>
+      <li><span class="passo__n" aria-hidden="true">2</span><h3>Pensar a solução com clareza</h3><p>Desenho simples, escolhas explicadas e um caminho curto até a primeira versão no ar.</p></li>
+      <li><span class="passo__n" aria-hidden="true">3</span><h3>Construir com IA do lado</h3><p>Mais velocidade, mais organização e mais qualidade, com revisão humana em tudo que vai para produção.</p></li>
+      <li><span class="passo__n" aria-hidden="true">4</span><h3>Entregar o que move o produto</h3><p>Publicado, medido e documentado, para a próxima versão sair mais fácil que a anterior.</p></li>
+    </ol>
+
+    <div class="pecas">
+      <h3 class="pecas__titulo">Ferramentas da casa</h3>
+      <dl class="pecas__lista">
+        <div><dt>Mobile</dt><dd>Flutter, Dart, Swift, iOS, Android, Expo, React Native</dd></div>
+        <div><dt>Web</dt><dd>TypeScript, React 19, Astro, Vite, TanStack, Tailwind</dd></div>
+        <div><dt>Back-end</dt><dd>Node, Fastify, Prisma, PostgreSQL, Java, Go</dd></div>
+        <div><dt>IA</dt><dd>Claude, Codex, Gemini, DeepSeek, streaming e voz</dd></div>
+        <div><dt>Nuvem</dt><dd>UpUai Cloud, Kubernetes, Helm, ArgoCD, Docker, Cloudflare Workers</dd></div>
+        <div><dt>Cobrança e e-mail</dt><dd>Asaas (cartão e Pix), AbacatePay, Resend</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <div class="furos" aria-hidden="true"></div>
+
+  <section class="bloco" id="trajetoria" aria-labelledby="t-trajetoria">
+    <div class="so-impressao">
+      <p class="so-impressao__nome">Gabriel Braga</p>
+      <p>Engenheiro de software full stack · Belo Horizonte, MG · contato@gabaritei.com.br · linkedin.com/in/gbmiranda · gbmtec.com.br</p>
+    </div>
+    <div class="bloco__cabeca">
+      <h2 id="t-trajetoria">Trajetória.</h2>
+      <p class="bloco__lead">De estagiário em Java, em 2012, a arquiteto Flutter e fundador. Sempre perto do produto e de quem o usa.</p>
+    </div>
+
+    <ol class="linha-tempo">
+      <li><p class="lt__quando">2024 a hoje</p><div><h3>Framework Digital</h3><p class="lt__cargo">Especialista em engenharia de software</p><p>Arquiteto Flutter: aplicações mobile e web, bibliotecas e componentes reutilizáveis, boas práticas de código e apoio técnico a times internos e clientes.</p></div></li>
+      <li><p class="lt__quando">2022 a 2024</p><div><h3>Sólides</h3><p class="lt__cargo">Software Engineering Specialist</p><p>Arquiteto Flutter: packages reutilizáveis, processo de contratação e treinamento, web em Flutter e liderança do Sólides DS, a biblioteca de componentes de UI.</p></div></li>
+      <li><p class="lt__quando">2021 a 2022</p><div><h3>Loft</h3><p class="lt__cargo">Senior Software Engineer</p><p>Flutter sênior na construção e no lançamento da primeira versão do aplicativo.</p></div></li>
+      <li><p class="lt__quando">2017 a 2021</p><div><h3>Framework</h3><p class="lt__cargo">Mobile Developer, arquiteto mobile</p><p>iOS nativo em Swift e a transição para Flutter. Projetos para Unimed-BH, Sólides, Tangerino, Unidas e Araujo.</p></div></li>
+      <li><p class="lt__quando">2016 a 2017</p><div><h3>Tecvidya Solutions</h3><p class="lt__cargo">iOS Developer</p></div></li>
+      <li><p class="lt__quando">2015 a 2016</p><div><h3>PayMeApp</h3><p class="lt__cargo">Software Developer</p></div></li>
+      <li><p class="lt__quando">2013 a 2015</p><div><h3>Framework</h3><p class="lt__cargo">Desenvolvedor</p><p>Sistemas web em Java (Wicket, Web Service e JasperReports) e projetos para Android e iOS.</p></div></li>
+      <li><p class="lt__quando">2012 a 2013</p><div><h3>PDITec</h3><p class="lt__cargo">Desenvolvedor, estágio</p><p>Sistemas web em Java e projetos para Android e iOS.</p></div></li>
+    </ol>
+
+    <figure class="destaque">
+      <p class="destaque__valor">R$ 20 mi por mês</p>
+      <figcaption>O app de vendas da Araujo, que liderei em Flutter na Framework, fatura mais de R$ 20 milhões por mês. Informação do meu perfil no LinkedIn.</figcaption>
+    </figure>
+
+    <p class="formacao"><b>Formação</b> Bacharelado em Sistemas de Informação, PUC Minas, 2011 a 2015.</p>
+
+    <div class="acoes-cv">
+      <button class="cel" type="button" data-imprimir>Salvar currículo em PDF<svg class="ico" aria-hidden="true"><use href="#baixo"/></svg></button>
+      <a class="cel" href="https://www.linkedin.com/in/gbmiranda" target="_blank" rel="noopener">Perfil no LinkedIn<svg class="ico" aria-hidden="true"><use href="#seta"/></svg></a>
+    </div>
+  </section>
+
+  <div class="furos" aria-hidden="true"></div>
+
+  <section class="bloco bloco--contato" id="contato" aria-labelledby="t-contato">
+    <div class="bloco__cabeca">
+      <h2 id="t-contato">Conta o seu projeto.</h2>
+      <p class="bloco__lead">Escreva em poucas linhas o que você precisa. O botão abre o seu aplicativo de e-mail com tudo preenchido, e eu leio e respondo pessoalmente.</p>
+    </div>
+
+    <form class="ficha" id="ficha" novalidate>
+      <div class="campo">
+        <label for="f-nome">Seu nome</label>
+        <input id="f-nome" name="nome" type="text" autocomplete="name" required>
+      </div>
+      <div class="campo">
+        <label for="f-contato">Como te respondo (e-mail ou WhatsApp)</label>
+        <input id="f-contato" name="contato" type="text" autocomplete="email" required>
+      </div>
+      <fieldset class="campo campo--cheio">
+        <legend>O que você procura</legend>
+        <div class="opcoes">
+          <label class="opcao"><input type="radio" name="tipo" value="Software sob medida" checked><span>Software sob medida</span></label>
+          <label class="opcao"><input type="radio" name="tipo" value="Freela"><span>Freela</span></label>
+          <label class="opcao"><input type="radio" name="tipo" value="Consultoria"><span>Consultoria</span></label>
+          <label class="opcao"><input type="radio" name="tipo" value="Ainda não sei"><span>Ainda não sei</span></label>
+        </div>
+      </fieldset>
+      <div class="campo campo--cheio">
+        <label for="f-projeto">O projeto</label>
+        <textarea id="f-projeto" name="projeto" rows="5" required placeholder="O que você quer construir, para quem, e o que já existe hoje."></textarea>
+      </div>
+      <div class="campo">
+        <label for="f-prazo">Prazo desejado</label>
+        <select id="f-prazo" name="prazo">
+          <option>Sem pressa</option>
+          <option>Em 1 a 3 meses</option>
+          <option>Em menos de 1 mês</option>
+        </select>
+      </div>
+      <div class="ficha__acoes">
+        <button class="cel cel--cheia" type="submit">Preparar o e-mail</button>
+        <button class="cel" type="button" id="copiar">Copiar o texto</button>
+        <p class="ficha__aviso" id="aviso" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+
+    <ul class="diretos">
+      <li><span>E-mail</span><a href="mailto:contato@gabaritei.com.br">contato@gabaritei.com.br</a></li>
+      <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/gbmiranda" target="_blank" rel="noopener">linkedin.com/in/gbmiranda</a></li>
+      <li><span>GitHub</span><a href="https://github.com/gbmiranda" target="_blank" rel="noopener">github.com/gbmiranda</a></li>
+    </ul>
+  </section>
 </main>
+
+<footer class="rodape">
+  <div class="rodape__grade">
+    <svg class="rodape__marca marca" aria-hidden="true"><use href="#gbm"/></svg>
+    <div class="carimbo">
+      <h2>Dados da empresa</h2>
+      <dl>
+        <div><dt>Razão social</dt><dd>GBM Tecnologia LTDA</dd></div>
+        <div><dt>CNPJ</dt><dd>68.727.144/0001-88</dd></div>
+        <div><dt>Atividade</dt><dd>Consultoria e desenvolvimento em tecnologia da informação</dd></div>
+        <div><dt>Cidade</dt><dd>Belo Horizonte, Minas Gerais, Brasil</dd></div>
+        <div><dt>Contato</dt><dd><a href="mailto:contato@gabaritei.com.br">contato@gabaritei.com.br</a></dd></div>
+      </dl>
+    </div>
+  </div>
+  <p class="rodape__fim">© 2026 GBM Tecnologia LTDA. Todos os direitos reservados. Publicado na <a href="https://upuai.com.br" target="_blank" rel="noopener">UpUai Cloud</a>.</p>
+</footer>
+
+<script src="assets/js/site.js" defer></script>
 </body>
 </html>

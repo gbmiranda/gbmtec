@@ -1,0 +1,10 @@
+# GitHub Pages (hospedagem anterior): só publica o site, não os documentos internos.
+exclude:
+  - PRODUCT.md
+  - DESIGN.md
+  - Dockerfile
+  - nginx.conf.template
+  - .dockerignore
+  - marca
+include:
+  - .well-known
