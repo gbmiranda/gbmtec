@@ -46,7 +46,7 @@ http {
             return 200 "ok\n";
         }
 
-        # HTML sempre revalidado; imagens e logos com cache longo; CSS e JS com cache curto.
+        # HTML sempre revalidado; imagens, logos e fontes com cache longo; CSS e JS com cache curto.
         # Só `expires` aqui: add_header dentro de location apagaria os cabeçalhos de segurança acima.
         location / {
             try_files $uri $uri/ =404;
@@ -54,6 +54,7 @@ http {
         }
         location /assets/img/ { expires 30d; }
         location /assets/logo/ { expires 30d; }
+        location /assets/fonts/ { expires 30d; }
         location ~* \.(css|js)$ { expires 1h; }
 
         error_page 404 /404.html;

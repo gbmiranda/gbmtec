@@ -140,7 +140,7 @@ A restrained achromatic palette: warm gallery off-white, one lacquer black, and 
 **Display Font:** Josefin Sans (with Century Gothic, Avenir Next, system-ui)
 **Body Font:** Hanken Grotesk (with system-ui, -apple-system, Segoe UI, Roboto)
 
-**Character:** Geometric, thin, letterspaced capitals set against a plain humanist grotesk. The capitals carry the Wiener Werkstatte voice; the grotesk keeps long pt-BR copy readable. Both load from Google Fonts as variable families (Josefin 200-700, Hanken 300-700).
+**Character:** Geometric, thin, letterspaced capitals set against a plain humanist grotesk. The capitals carry the Wiener Werkstatte voice; the grotesk keeps long pt-BR copy readable. Both are self-hosted variable families, latin subset only (`assets/fonts/`, OFL licenses alongside; Josefin 200-700, Hanken 300-700), preloaded from the page head.
 
 ### Hierarchy
 - **Display** (300, clamp(2.5rem, 8.6vw, 6rem) narrowing to clamp(3.2rem, 5.4vw, 5rem) from 1100px, 1.03, 0.03em, uppercase): the single h1, max 11em wide, balanced.
