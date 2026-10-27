@@ -239,7 +239,7 @@ h2{font:300 clamp(1.8rem,3.6vw,2.9rem)/1.08 var(--f-titulo);letter-spacing:.06em
 /* Rodapé como carimbo de prancha */
 .rodape{border-top:1px solid var(--tinta)}
 .rodape__grade{max-width:calc(var(--max) + var(--gut)*2);margin:0 auto;padding:clamp(40px,6vw,72px) var(--gut);display:grid;gap:36px;align-items:end}
-.rodape__marca{width:min(180px,50%);height:auto;aspect-ratio:1}
+.rodape__marca{width:min(180px,50%);height:auto;aspect-ratio:1;justify-self:center;align-self:center}
 @media (min-width:900px){.rodape__grade{grid-template-columns:1fr 1.5fr}}
 .carimbo{border:1px solid var(--tinta);background:var(--papel)}
 .carimbo h2{padding:14px 18px;border-bottom:1px solid var(--tinta);font:600 .78rem/1.2 var(--f-titulo);letter-spacing:.22em}
