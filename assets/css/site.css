@@ -47,6 +47,8 @@ ul,ol{padding:0;list-style:none}
 :focus-visible{outline:2px solid var(--tinta);outline-offset:3px}
 .pular{position:absolute;left:var(--gut);top:-80px;z-index:50;padding:14px 18px;background:var(--tinta);color:var(--fundo);font:500 .85rem/1 var(--f-titulo);letter-spacing:.14em;text-transform:uppercase}
 .pular:focus{top:12px}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+[tabindex="-1"]:focus{outline:none}
 
 /* Células: todo controle é uma célula quadrada que enche de preto ao ativar */
 .cel{
@@ -76,11 +78,11 @@ ul,ol{padding:0;list-style:none}
 .topo__menu{display:none;margin-left:auto;padding:0;border:0;text-underline-offset:.6em}
 .topo__menu:hover{background:transparent;color:var(--tinta);text-decoration:underline;text-decoration-thickness:1px}
 
-/* Hero: o monograma é desenhado uma vez ao lado do título */
+/* Hero: o monograma é desenhado uma vez ao lado do título (só em tela larga) */
 .hero{position:relative;overflow:hidden;padding:clamp(28px,4.5vh,56px) 0 clamp(28px,4vh,48px)}
 .hero__grade{position:relative;max-width:calc(var(--max) + var(--gut)*2);margin:0 auto;padding:0 var(--gut)}
 .hero__texto{position:relative;z-index:1}
-.hero__marca{display:block;width:min(34vw,200px);height:auto;margin-top:clamp(28px,5vw,40px);fill:var(--tinta)}
+.hero__marca{display:none;height:auto;fill:var(--tinta)}
 .hero__traco{display:none;fill:none;stroke:var(--tinta);stroke-width:13;stroke-linecap:round;stroke-linejoin:round}
 h1{
   max-width:11em;font:300 clamp(2.5rem,8.6vw,6rem)/1.03 var(--f-titulo);
@@ -91,7 +93,7 @@ h1{
 @media (min-width:1100px){
   .hero__grade{display:grid;grid-template-columns:minmax(0,1fr) min(32vw,440px);gap:56px;align-items:center}
   h1{font-size:clamp(3rem,4.8vw,4.5rem)}
-  .hero__marca{width:min(100%,360px);margin:0 auto}
+  .hero__marca{display:block;width:min(100%,360px);margin:0 auto}
 }
 
 /* Janelas: furos na parede, cada um dá para um projeto no ar, com passe-partout */
@@ -148,9 +150,20 @@ h2{font:300 clamp(1.8rem,3.6vw,2.9rem)/1.08 var(--f-titulo);letter-spacing:.06em
 
 /* Quadro de produtos */
 .linha{display:grid;gap:10px 32px;padding:clamp(22px,3vw,34px) 0;border-bottom:1px solid var(--filete)}
-.linha__nome{font:400 clamp(1.25rem,2vw,1.6rem)/1.15 var(--f-titulo);letter-spacing:.1em;text-transform:uppercase}
+.linha__nome a{display:inline-block;padding:4px 0;transition:opacity .25s var(--ease)}
+.linha__nome a:hover{opacity:.7}
 .linha__texto{max-width:60ch}
-.linha__pecas{color:var(--suave);font-size:.95rem}
+.linha__site{color:var(--suave);font-size:.95rem}
+/* Logos das marcas: o arquivo oficial de cada site vira máscara e pega a tinta da sala.
+   Altura pela proporção (área parecida), para nenhuma pesar mais que a outra. */
+.logo{display:block;height:var(--h);aspect-ratio:var(--r);max-width:100%;background:currentColor;-webkit-mask:var(--m) left center/contain no-repeat;mask:var(--m) left center/contain no-repeat;forced-color-adjust:none}
+@media (forced-colors:active){.logo{background:CanvasText}}
+.logo--gabaritei{--m:url(../logo/marcas/gabaritei.svg);--r:5.828;--h:24px}
+.logo--upuai{--m:url(../logo/marcas/upuai.svg);--r:4.355;--h:28px}
+.logo--petalia{--m:url(../logo/marcas/petalia.svg);--r:2.737;--h:35px}
+.logo--estilia{--m:url(../logo/marcas/estilia.svg);--r:3.304;--h:32px}
+.logo--saiph{--m:url(../logo/marcas/saiph.svg);--r:4.233;--h:28px}
+.logo--tai{--m:url(../logo/marcas/tai.svg);--r:2.405;--h:37px}
 .linha__estado{display:inline-flex;align-items:center;gap:10px;font:600 .78rem/1 var(--f-titulo);letter-spacing:.18em;text-transform:uppercase}
 .linha__estado::before{content:"";width:9px;height:9px;background:var(--tinta);flex:none}
 .linha__estado--pre::before{background:transparent;border:1.5px solid var(--tinta)}
@@ -169,7 +182,6 @@ h2{font:300 clamp(1.8rem,3.6vw,2.9rem)/1.08 var(--f-titulo);letter-spacing:.06em
 @media (min-width:1000px){.servicos{grid-template-columns:repeat(3,1fr)}}
 .servico{display:flex;flex-direction:column;gap:20px;padding:clamp(24px,3vw,40px);background:var(--papel)}
 .servico h3{font:300 clamp(1.5rem,2.2vw,1.95rem)/1.12 var(--f-titulo);letter-spacing:.05em;text-transform:uppercase;text-wrap:balance}
-.servico__tese{margin-top:-10px;font:600 .8rem/1.3 var(--f-titulo);letter-spacing:.2em;text-transform:uppercase;color:var(--suave)}
 .servico__lead{max-width:48ch}
 .servico__lista h4{margin-bottom:12px;font:600 .78rem/1.2 var(--f-titulo);letter-spacing:.2em;text-transform:uppercase;color:var(--suave)}
 .servico__lista ul{display:grid;gap:10px}

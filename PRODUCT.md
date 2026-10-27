@@ -45,6 +45,7 @@ Trabalha com Claude, Codex e copilotos avançados no dia a dia (dito no próprio
 ## Brand Commitments
 
 - Português do Brasil. Sem travessão (—) como pontuação nos textos (regra dos projetos do Gabriel).
+- Voz (pedido do Gabriel, 27/10/2026: "textos meio egocêntricos", "menos IA"): o produto e o visitante são o sujeito; a posse das marcas aparece uma vez, sem repetir "minhas"; primeira pessoa só onde é ele quem faz. Sem bordão nem frase de efeito, sem "não é X, é Y", sem listas de três por hábito.
 - Nome: GBM Tecnologia (razão social GBM Tecnologia LTDA). Dados da empresa e JSON-LD Organization do site atual permanecem (servem a verificações de Google, Meta e gateways).
 - O arquivo `google261a20c75eca65b7.html` fica na raiz.
 

@@ -24,6 +24,32 @@
     doc.addEventListener('keydown', function (e) { if (e.key === 'Escape') fechar(); });
   }
 
+  /* Links internos sem # no endereço: rola até a seção (suave só se o CSS deixar)
+     e mantém a URL limpa. A marca do topo volta ao início. */
+  var limparEndereco = function () {
+    if (location.hash && history.replaceState) history.replaceState(null, '', location.pathname + location.search);
+  };
+  doc.addEventListener('click', function (e) {
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    var a = e.target.closest ? e.target.closest('a[href^="#"]') : null;
+    var alvo = a && doc.getElementById(a.getAttribute('href').slice(1));
+    if (!alvo) return;
+    e.preventDefault();
+    if (alvo.id === 'topo') window.scrollTo({ top: 0 });
+    else alvo.scrollIntoView({ block: 'start' });
+    if (!alvo.hasAttribute('tabindex')) alvo.setAttribute('tabindex', '-1');
+    alvo.focus({ preventScroll: true });
+    limparEndereco();
+  });
+  /* Quem chega por um link antigo com # vai à seção, e o # sai depois */
+  if (location.hash) {
+    var inicial = doc.getElementById(location.hash.slice(1));
+    window.addEventListener('load', function () {
+      if (inicial) inicial.scrollIntoView({ block: 'start' });
+      limparEndereco();
+    });
+  }
+
   /* Currículo em PDF: imprime só a trajetória (regras em @media print) */
   $$('[data-imprimir]').forEach(function (b) {
     b.addEventListener('click', function () { window.print(); });

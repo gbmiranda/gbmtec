@@ -172,7 +172,8 @@ Square only: `border-radius: 0` on every cell, and 1px lacquer borders. Recurrin
 - **Double-ruled cartouche:** a 1px black border plus a 1px silver outline offset by 6px (with a 6px outer margin to leave room), used on services, the featured figure and the contact channels.
 - **Pierced square:** a hollow 8 to 11px square outline, as list markers, a status glyph (filled square = live, hollow = pre-launch), and a masked row of hollow squares (24 x 22px tile, silver) used as divider only at the two turns of the page.
 - **Window mat:** a screenshot sits in a 1px black frame inside a 14px mat in the wall color, 4:3, cropped left.
-- **Monogram:** the GBM Didone mark (one filled path, 512 viewBox, Fibonacci weights 34/21/13 on a ring of radius 233; source in `marca/oficial/gbm.svg`), always solid in the ink color. In the hero the skeleton is traced once (2.4s, staggered 0.4s) and the filled mark fades in at 1.8s.
+- **Monogram:** the GBM Didone mark (one filled path, 512 viewBox, Fibonacci weights 34/21/13 on a ring of radius 233; source in `marca/oficial/gbm.svg`), always solid in the ink color. In the hero (1100px and up only; hidden on phones and tablets) the skeleton is traced once (2.4s, staggered 0.4s) and the filled mark fades in at 1.8s.
+- **Brand logos:** each product row is headed by that brand's own logo, taken unchanged from its live site (`assets/logo/marcas/`, Gabaritei and UpUai as icon plus name, like their headers) and rendered as a CSS mask filled with the ink color, so it follows light and dark. Heights are set per logo so the areas look alike (24 to 37px). The brand name stays in visually hidden text.
 
 ## Components
 
@@ -180,7 +181,7 @@ Square only: `border-radius: 0` on every cell, and 1px lacquer borders. Recurrin
 Square, 52px high, 0 26px padding, 1px lacquer border, Josefin label (0.8rem, 500, 0.18em, uppercase). Idle is transparent; hover fills Lacquer Black with Gallery White text (250ms, expo-out). The solid variant starts filled and inverts on hover. Icons are 14px square-capped line SVGs. Focus is a 2px lacquer outline at 3px offset.
 
 ### Navigation
-Sticky top bar on the wall color with a 1px lacquer bottom rule. The 40px mark sits free on the left, with no rules around it; the links are plain letterspaced text on the right and underline on hover. No sales button in the header. Below 860px a plain "Menu" text button (it reads "Fechar" when open) toggles a stacked list of ruled rows.
+Sticky top bar on the wall color with a 1px lacquer bottom rule. The 40px mark sits free on the left, with no rules around it; the links are plain letterspaced text on the right and underline on hover. No sales button in the header. Below 860px a plain "Menu" text button (it reads "Fechar" when open) toggles a stacked list of ruled rows. In-page links scroll to their section and never leave a `#` in the address; the mark scrolls back to the top.
 
 ### Project windows
 A lattice of square peepholes onto live products: screenshot in a ruled frame on a mat, with a caption cell (name in Josefin 600, descriptor in Slate Gray, arrow icon) under a 1px rule. Hover or focus fills the caption black and nudges the screenshot scale to 1.05 (1.1s).
