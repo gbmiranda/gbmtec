@@ -50,6 +50,8 @@ Trabalha com Claude, Codex e copilotos avançados no dia a dia (dito no próprio
 
 ## Evidence on Hand
 
+- Saiph TI (https://saiphti.com.br, empresa do Gabriel, projeto `saiph` na UpUai): texto do próprio site, "Datacenters próprios em Belo Horizonte, Contagem e Recife", com colocation, servidores dedicados, nuvem privada, backup gerenciado e sistemas sob medida; o menu cita UpUai (PaaS) e Salvabox.
+- TAI (https://taitecnologia.com, onde o Gabriel é sócio, informado por ele em 27/10/2026): "automação de processos e agentes de IA", a operação da empresa num sistema só (processos, ponto, folha, atendimento, financeiro e contabilidade). Stack no repositório local: Java, Spring Boot, PostgreSQL, React e Expo.
 - Projetos no ar (HTTP 200 em 27/10/2026): gabaritei.com.br, petalia.com.br (fase pré-venda), estilia.com.br, upuai.com.br, saiphti.com.br, taitecnologia.com. Prints das home em `assets/img/*.webp`, capturados em 27/10/2026 (origem: a URL de cada um).
 - Carreira (LinkedIn): PDITec 2012, Framework 2013 a 2015, PayMeApp 2015, Tecvidya 2016, Framework 2017 a 2021, Loft 2021, Sólides 2022 a 2024, Framework Digital 2024 até hoje. Bacharelado em Sistemas de Informação, PUC Minas, 2011 a 2015.
 - Único número com fonte: o app de vendas da Araujo, feito em Flutter sob a liderança dele, fatura mais de R$ 20 milhões por mês (texto do próprio LinkedIn).
