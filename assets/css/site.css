@@ -71,8 +71,7 @@ ul,ol{padding:0;list-style:none}
 .topo__nav{display:flex;flex:1;align-items:stretch}
 .topo__nav a{display:flex;align-items:center;padding:0 24px;font:500 .8rem/1 var(--f-titulo);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;border-right:1px solid var(--tinta);transition:background-color .25s var(--ease),color .25s var(--ease)}
 .topo__nav a:hover{background:var(--tinta);color:var(--fundo)}
-.topo__cta{border-width:0 1px;margin-left:auto}
-.topo__menu{display:none;margin-left:auto;border-width:0 0 0 1px}
+.topo__menu{display:none;margin-left:auto;border-width:0 1px}
 
 /* Hero: o monograma é desenhado uma vez ao lado do título */
 .hero{position:relative;overflow:hidden;padding:clamp(28px,4.5vh,56px) 0 clamp(28px,4vh,48px)}
@@ -121,6 +120,7 @@ h2{font:300 clamp(1.8rem,3.6vw,2.9rem)/1.08 var(--f-titulo);letter-spacing:.06em
   .bloco__cabeca{grid-template-columns:5fr 7fr;align-items:end}
   .bloco__cabeca--pilha{grid-template-columns:1fr}
 }
+.nq{white-space:nowrap}
 .pequeno{font:600 .78rem/1.2 var(--f-titulo);letter-spacing:.2em;text-transform:uppercase;color:var(--suave)}
 
 /* Cabeça lateral (trajetória e contato): título à esquerda, corpo à direita */
@@ -255,12 +255,7 @@ h2{font:300 clamp(1.8rem,3.6vw,2.9rem)/1.08 var(--f-titulo);letter-spacing:.06em
   .topo__nav.aberto{display:flex}
   .topo__nav a{padding:20px var(--gut);border-right:0;border-top:1px solid var(--filete);min-height:56px}
   .topo__menu{display:inline-flex}
-  .topo__cta{margin-left:0}
   .cel--marca{width:72px}
-}
-@media (max-width:420px){
-  .topo__cta{padding:0 14px}
-  .topo__menu{padding:0 14px}
 }
 
 /* Currículo em PDF: só a trajetória */
@@ -268,7 +263,7 @@ h2{font:300 clamp(1.8rem,3.6vw,2.9rem)/1.08 var(--f-titulo);letter-spacing:.06em
   :root{--fundo:#fff;--papel:#fff;--tinta:#000;--suave:#333;--prata:#999;--filete:#ccc}
   body{font-size:11pt}
   .topo,.hero,.janelas,.furos,.pular,.acoes-cv,.destaque,
-  #no-ar,#servicos,#metodo,#contato,.rodape__grade,.rodape__marca{display:none!important}
+  #marcas,#servicos,#metodo,#contato,.rodape__grade,.rodape__marca{display:none!important}
   .bloco{padding:0}
   .bloco--lateral{display:block}
   .lateral__cabeca{position:static;padding-top:0}

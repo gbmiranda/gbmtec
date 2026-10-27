@@ -20,11 +20,11 @@ Estático: HTML, CSS e JS puro, sem build. Hospedagem decidida pelo Gabriel: UpU
 
 ## Product Purpose
 
-Site da **GBM Tecnologia LTDA** (CNPJ 68.727.144/0001-88, Belo Horizonte, MG) e vitrine do Gabriel Braga, engenheiro full stack. Vende três coisas: software sob medida, freela (mão na massa por projeto ou período) e consultoria (arquitetura, Flutter, desenvolvimento com IA). Sucesso: um visitante qualificado escreve para o Gabriel contando o projeto.
+Site da **GBM Tecnologia LTDA** (CNPJ 68.727.144/0001-88, Belo Horizonte, MG) e apresentação do Gabriel Braga. É mais apresentação que venda (pedido do Gabriel, 27/10/2026): mostra as marcas próprias dele, no ar e faturando, e os serviços que ele vende, sem chamada agressiva no topo. Foco em IA (Claude, Claude Code, Codex, LLMs locais), agentes e automações, com projetos do zero à produção. Três serviços: criação de produtos, IA e automações, consultoria em IA. O passado em mobile e Flutter aparece só de forma discreta, na trajetória. Sucesso: um visitante qualificado entende quem ele é e escreve pelo WhatsApp.
 
 ## Positioning
 
-Um engenheiro com mais de 10 anos de estrada que opera vários projetos próprios em produção (Gabaritei, Petalia, Estilia, UpUai, a Saiph TI e a TAI, onde é sócio) e usa desenvolvimento orientado a IA como método diário. Quem contrata leva a velocidade de um time pequeno com a responsabilidade de quem já opera o que constrói. Um estúdio genérico não pode copiar os produtos no ar.
+Um engenheiro com mais de 10 anos de estrada que criou e opera marcas próprias em produção, rodando e faturando (Gabaritei, Petalia, Estilia, UpUai, a Saiph TI e a TAI, onde é sócio), e que hoje trabalha com IA como centro: agentes, automações e LLMs locais. Quem contrata leva a velocidade de um time pequeno com a responsabilidade de quem já opera o que constrói. Um estúdio genérico não pode copiar os produtos no ar.
 
 ## Operating Context
 

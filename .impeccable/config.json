@@ -14,6 +14,15 @@
         "value": "sans\",\"century gothic\",system-ui,sans-serif",
         "createdAt": "2026-10-27T16:21:10.425Z",
         "reason": "Claude: 404.html uses the Josefin Sans display stack declared in DESIGN.md; the detector splits the quoted stack"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-27T16:35:11.542Z",
+        "reason": "Claude: medido em 390px, toda célula da grade de filete tem 14 a 24px de respiro (janela, serviço, passo, canal, carimbo); os avisos vêm da grade de 1px e de padding em clamp(), que o detector não resolve"
       }
     ]
   }
